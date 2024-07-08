@@ -19,3 +19,42 @@ body {
         border-width: 10px;
         border-radius: 20px.
 }
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: deeppink;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}
+
+div:hover{
+    background-color: #0080ff;
+    width: 150px;
+    height: 150px;
+    # добавляем свойство для плавности:
+    transition: 1s;
+}
+
+
+h1::before{
+    content: 'Город';
+    color: deeppink;
+    font-size: 50px:
+    border-radius: 10px;
+    background-color: bisque;
+}
+
+a:link {
+    color: deeppink;
+}
+
+a:visited {
+    color: olivedrab;
+}
+
+a:active{
+    color: royalblue;
+}
