@@ -1,0 +1,21 @@
+body {
+    background-color: crimson
+}
+#test {
+        background-color: red
+}
+
+.text {
+        background-color: blue
+}
+
+.text {
+        font-size: 34px;
+        font-family: Comic Sans MS, Comic Sans, cursive;
+        font-weight: 900;
+        width: 50%;
+        border-color: deeppink;
+        border-style: solid;
+        border-width: 10px;
+        border-radius: 20px.
+}
