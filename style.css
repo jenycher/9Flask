@@ -28,9 +28,10 @@ div {
     position: fixed;
     bottom: 100px;
     right: 100px;
+    transition: 1s;
 }
 
-div:hover{
+div:hover {
     background-color: #0080ff;
     width: 150px;
     height: 150px;
@@ -47,14 +48,14 @@ h1::before{
     background-color: bisque;
 }
 
-a:link {
+a:link{
     color: deeppink;
 }
 
-a:visited {
+a:visited{
     color: olivedrab;
 }
 
-a:active{
+a:activ {
     color: royalblue;
 }
