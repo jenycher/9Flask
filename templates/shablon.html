@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{caption}}</title>
+</head>
+<body>
+    {% if user %}
+        <p>Вы вошли  под именем {{user}}</p>
+    {% endif %}
+
+
+<p> Вы должны выложить {{num}}
+    {% if num == 1 %}
+        пост
+    {% elif num 2 <= num <= 4 %}
+        поста
+    {% else %}
+        постов
+    {% endif %}
+</p>
+
+</body>
+</html>
