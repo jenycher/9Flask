@@ -13,14 +13,7 @@ def filsms():
 @app.route("/person/")
 
 def person():
-    #html="""
-    #<h1>Тестовый запуск программы</h1>
-    #<p>Это просто текст</p>
-    #"""
-    #return html
     return render_template("index-p.html")
-
-
 
 if __name__ == "__main__":
     app.run()
