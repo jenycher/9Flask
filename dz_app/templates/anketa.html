@@ -32,12 +32,15 @@
      <h2>Анкеты пользователей</h2>
         {% for anketa in ankets %}
 
-        <div class="anketa">
-            <h4>{{ anketa.name }}</h4>
-            <p>{{ anketa.city }}</p>
-            <p>{{ anketa.hobby }}</p>
-            <p>{{ anketa.age }}</p>
-        </div>
+   <div class="card border-dark mb-3" style="max-width: 18rem;">
+    <div class="card-header"><h4> {{ anketa.name }}</h4> </div>
+    <div class="card-body text-primary">
+        <p class="card-title">Город: {{ anketa.city }}</p>
+        <p class="card-text">Хобби: {{ anketa.hobby }}</p>
+        <p class="card-text">Возраст: {{ anketa.age }}</p>
+    </div>
+</div>
+
         {% endfor %}
 
 
