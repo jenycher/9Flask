@@ -1,0 +1,20 @@
+{% extends 'shabl.html' %}
+
+{% block title %}
+   Персонажи вселенной Гарри Поттера
+{% endblock %}
+
+{% block content %}
+<div class="card" style="width: 12rem;">
+  <img src="../static/image/garry.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Гарри Поттер</h5>
+    <p class="card-text">Kитературный персонаж, главный герой серии романов английской писательницы Джоан Роулинг.
+           На одиннадцатый день рождения Гарри узнаёт, что является волшебником, и ему уготовано
+           место в школе волшебства «Хогвартс».</p>
+    <a href="#" class="btn btn-outline-success">{{link}}</a>
+  </div>
+</div>
+
+
+{% endblock %}
