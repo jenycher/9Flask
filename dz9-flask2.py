@@ -13,7 +13,7 @@ def index():
 @app.route("/blog/")
 
 def blog():
-    return render_template("blog.html")
+    return render_template("anketa.html")
 
 @app.route("/contacts/")
 
