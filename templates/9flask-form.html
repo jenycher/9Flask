@@ -6,19 +6,16 @@
 </head>
 <body>
     <h1>Контактная форма</h1>
-    #определяет форму с адресом для отправки данных и методом POST
+
     <form action="test" method="post">
-        #создает метку для поля ввода имени
-        <label for="name">Имя:</label>
-        #оздает текстовое поле для ввода имени с обязательным заполнением
+       <label for="name">Имя:</label>
         <input type="text" id="name" name="name" required>
         <br>
-        #создает метку для поля ввода электронной почты
         <label for="email">Электронная почта:</label>
-        #создает поле для ввода электронной почты с обязательным заполнением
+
         <input type="email" id="email" name="email" required>
         <br>
-        #создает кнопку для отправки формы
+
         <button type="submit">Отправить</button>
     </form>
 </body>
