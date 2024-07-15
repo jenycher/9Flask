@@ -1,7 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField, SubmitField
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
-from app.models import User
+from authWebPy.models import User
 
 
 class RegistrationForm(FlaskForm):
@@ -29,8 +29,8 @@ class LoginForm(FlaskForm):
     submit = SubmitField('Login')
 
 class EditProfileForm(FlaskForm):
-    username = StringField('Username', validators=[DataRequired(), Length(min=2, max=35)])
+    username = StringField('Имя', validators=[DataRequired(), Length(min=2, max=35)])
     email = StringField('Email', validators=[DataRequired(), Email()])
-    password = PasswordField('New Password')
-    confirm_password = PasswordField('Confirm New Password', validators=[EqualTo('password', message='Пароли должны совпадать')])
-    submit = SubmitField('Save Changes')
+    password = PasswordField('Новый пароль')
+    confirm_password = PasswordField('Повторить новый пароль', validators=[EqualTo('password', message='Пароли должны совпадать')])
+    submit = SubmitField('Сохранить')
